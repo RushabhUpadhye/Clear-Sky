@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear Sky Weather App</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Include Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  {{> header}}
+
+  <div class="container">
+    <!-- Weather details section -->
+    <div class="weather-details">
+      <h2>Weather Information</h2>
+      <form id="weather-form">
+        <input type="text" id="city" placeholder="Enter city" required>
+        <button type="submit">Get Weather</button>
+      </form>
+
+      <!-- Display weather info -->
+      <div id="weather-info"></div>
+    </div>
+
+    <!-- Map section -->
+    <div id="map"></div>
+  </div>
+
+  {{> footer}}
+
+  <!-- Include Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>

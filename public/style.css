@@ -1,0 +1,88 @@
+/* styles.css */
+
+/* Basic body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #a3d5f7, #f0f8ff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Container for weather and map */
+.container {
+  display: flex;
+  justify-content: space-between; /* Space between columns */
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+/* Styling for weather details */
+.weather-details {
+  flex: 1; /* Take up available space */
+  padding: 20px;
+  text-align: left;
+}
+
+.weather-details h3 {
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+.weather-details p {
+  font-size: 1.2rem;
+}
+
+.weather-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Map container */
+#map {
+  flex: 1; /* Take up available space */
+  height: 400px;
+  border-radius: 15px;
+  margin-left: 20px; /* Space between weather details and map */
+}
+
+/* Input and button styles */
+input[type="text"] {
+  width: 60%;
+  padding: 12px;
+  margin: 20px 0;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
